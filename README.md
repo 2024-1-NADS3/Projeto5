@@ -30,7 +30,6 @@ NutriGenda utiliza tecnologias modernas para garantir uma experiência de usuár
 ## 🛠 Estrutura de pastas
 
 -Raiz<br>
-|<br>
 |-->documentos<br>
 |-->imagens<br>
 |-->src<br>
