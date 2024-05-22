@@ -14,18 +14,18 @@
 
 ## Descrição
 
-<p align="center">
-<img src="https://imgur.com/a/48lErtP" alt="Logo" border="0">
-  Game by <a href="http://www.nyphotographic.com/">Nick Youngson</a> <a rel="license" href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a> <a href="http://pix4free.org/">Pix4free</a>
-</p>
+NutriGenda é uma aplicação inovadora destinada a facilitar o gerenciamento de dietas personalizadas por nutricionistas e a adesão dos pacientes a essas dietas. Através de uma interface intuitiva e funcionalidades robustas, o NutriGenda oferece uma plataforma completa para a criação, atualização e monitoramento de planos alimentares.
 
+## Funcionalidades
 
-De um a dois parágrafos sobre o que é seu projeto e o que ele faz.
-<br><br>
-Meu projeto ajuda estudantes FECAP a configurarem seus githubs.
-<br><br>
-May the force be with you!
-<br><br>
+- **Gerenciamento de Pacientes**: Nutricionistas podem visualizar e gerenciar seus pacientes, acompanhando de perto suas necessidades e progresso.
+- **Criação**: Permite a criação de dietas personalizadas com opções para adicionar ou remover refeições e itens alimentares conforme necessário.
+- **Acompanhamento de Progresso**: Nutricionistas podem monitorar o progresso dos pacientes e ajustar as dietas de acordo com os resultados observados.
+- **Notificações e Lembretes**: Pacientes recebem lembretes de refeições e notificações sobre atualizações na dieta para garantir que seguem o plano alimentar corretamente.
+- **Comunicação Fácil**: Facilita a comunicação entre nutricionistas e pacientes, permitindo esclarecimentos e orientações rápidas e eficientes.
+
+NutriGenda utiliza tecnologias modernas para garantir uma experiência de usuário fluida e um gerenciamento de dados seguro e eficiente, tornando-se uma ferramenta indispensável para qualquer nutricionista e seus pacientes.
+
 
 ## 🛠 Estrutura de pastas
 
@@ -62,67 +62,96 @@ Há também 4 pastas que seguem da seguinte forma:
 
 <b>Android:</b>
 
-Faça o Download do JOGO.apk no seu celular.
-Execute o APK e siga as instruções de seu telefone.
+Faça o Download do Nutrigenda na sua playstore.
 
-```sh
-Coloque código do prompt de comnando se for necessário
-```
+## 💻 Configuração para Desenvolvimento
 
-<b>Windows:</b>
+Claro, aqui está a seção "Configuração para Desenvolvimento" reformulada:
 
-Não há instalação! Apenas executável!
-Encontre o JOGO.exe na pasta executáveis e execute-o como qualquer outro programa.
-
-```sh
-Coloque código do prompt de comnando se for necessário
-```
-
-<b>HTML:</b>
-
-Não há instalação!
-Encontre o index.html na pasta executáveis e execute-o como uma página WEB (através de algum browser).
+---
 
 ## 💻 Configuração para Desenvolvimento
 
 Descreva como instalar todas as dependências para desenvolvimento e como rodar um test-suite automatizado de algum tipo. Se necessário, faça isso para múltiplas plataformas.
 
-Para abrir este projeto você necessita das seguintes ferramentas:
+### Ferramentas Necessárias
 
--<a href="https://godotengine.org/download">GODOT</a>
+Para abrir este projeto, você necessita das seguintes ferramentas:
 
-```sh
-make install
-npm test
-Coloque código do prompt de comnando se for necessário
-```
+- [Android Studio](https://developer.android.com/studio)
+- [Java JDK](https://www.oracle.com/java/technologies/javase-jdk11-downloads.html) 11 ou superior
+- [MySQL](https://www.mysql.com/downloads/)
+- [.NET 5.0](https://dotnet.microsoft.com/download/dotnet/5.0)
+
+### Passos para Configuração
+
+#### Configuração do Backend (API)
+
+1. **Clone o repositório**
+   ```bash
+   git clone https://github.com/usuario/NutriGenda.git
+   cd NutriGenda/backend
+   ```
+
+2. **Configure o MySQL**
+   - Crie um banco de dados no MySQL.
+   - Atualize a string de conexão no arquivo `appsettings.json` com as credenciais do seu banco de dados MySQL.
+
+3. **Instale as dependências**
+   ```bash
+   dotnet restore
+   ```
+
+4. **Execute as migrações do Entity Framework Core**
+   ```bash
+   dotnet ef migrations add InitialCreate
+   dotnet ef database update
+   ```
+
+5. **Execute a aplicação**
+   ```bash
+   dotnet run
+   ```
+
+#### Configuração do Frontend (App Android)
+
+1. **Clone o repositório**
+   ```bash
+   git clone https://github.com/usuario/NutriGenda.git
+   cd NutriGenda/app
+   ```
+
+2. **Abra o projeto no Android Studio**
+   - Abra o Android Studio.
+   - Selecione "Open an existing Android Studio project" e navegue até o diretório `NutriGenda/app`.
+
+3. **Instale as dependências**
+   - O Android Studio deve automaticamente instalar todas as dependências necessárias ao abrir o projeto. Certifique-se de que o Gradle esteja sincronizado.
+
+4. **Configure o emulador ou dispositivo físico**
+   - Configure um emulador Android ou conecte um dispositivo físico via USB para testar a aplicação.
+
+5. **Execute a aplicação**
+   - Clique no botão "Run" ou use o atalho `Shift + F10`.
 
 ## 🗃 Histórico de lançamentos
 
 A cada atualização os detalhes devem ser lançados aqui.
 
-* 0.2.1 - 25/01/2022
-    * MUDANÇA: Atualização de docs (código do módulo permanece inalterado)
-* 0.2.0 - 15/01/2022
-    * MUDANÇA: Remove `setDefaultXYZ()`
-    * ADD: Adiciona `init()`
-* 0.1.1 - 11/01/2022
-    * CONSERTADO: Crash quando chama `baz()` (Obrigado @NomeDoContribuidorGeneroso!)
-* 0.1.0 - 10/01/2022
-    * O primeiro lançamento adequado
-    * MUDANÇA: Renomeia `foo()` para `bar()`
-* 0.0.1 - 01/01/2022
-    * Trabalho em andamento
+* 0.9 - 22/05/2024
+    * Versão beta do aplicativo
 
 ## 📋 Licença/License
 
+Este projeto está licenciado sob a Licença MIT. 
+
+This project is licensed under the MIT License.
 
 ## 🎓 Referências
 
-Aqui estão as referências usadas no projeto.
+1. **Retrofit**: Biblioteca de cliente HTTP para Android e Java. [Retrofit Documentation](https://square.github.io/retrofit/)
+2. **Entity Framework Core**: ORM para .NET. [Entity Framework Core Documentation](https://docs.microsoft.com/ef/core/)
+3. **Android Developer**: Documentação oficial do Android. [Android Developer Documentation](https://developer.android.com/docs)
+4. **MySQL**: Sistema de gerenciamento de banco de dados relacional. [MySQL Documentation](https://dev.mysql.com/doc/)
+5. **ASP.NET Core**: Framework para construção de aplicações web no .NET. [ASP.NET Core Documentation](https://docs.microsoft.com/aspnet/core/)
 
-1. <https://github.com/iuricode/readme-template>
-2. <https://github.com/gabrieldejesus/readme-model>
-3. <https://creativecommons.org/share-your-work/>
-4. <https://freesound.org/>
-5. Músicas por: <a href="https://freesound.org/people/DaveJf/sounds/616544/"> DaveJf </a> e <a href="https://freesound.org/people/DRFX/sounds/338986/"> DRFX </a> ambas com Licença CC 0.
