@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".screens.user.UserChooseScreen">
+
+    <ImageView
+        android:id="@+id/nutriLogin_logoImageView"
+        android:layout_width="232dp"
+        android:layout_height="138dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/nutriLogin_emailTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nutriLogin_logoImageView"
+        android:layout_marginTop="32dp"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/poppins_regular_font"
+        android:text="E-mail"
+        android:textColor="@color/black" />
+
+    <EditText
+        android:id="@+id/nutriLogin_emailEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nutriLogin_emailTextView"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/rounded_edittext_border"
+        android:fontFamily="@font/poppins_regular_font"
+        android:hint="email"
+        android:inputType="textEmailAddress"
+        android:padding="10dp"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/nutriLogin_passwordTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nutriLogin_emailEditText"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/poppins_regular_font"
+        android:text="Senha"
+        android:textColor="@color/black" />
+
+    <EditText
+        android:id="@+id/nutriLogin_passwordEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nutriLogin_passwordTextView"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/rounded_edittext_border"
+        android:fontFamily="@font/poppins_regular_font"
+        android:hint="senha"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:textAlignment="center" />
+
+    <Button
+        android:id="@+id/nutriLogin_loginButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nutriLogin_passwordEditText"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="@color/green"
+        android:fontFamily="@font/poppins_xbold_font"
+        android:text="Entrar"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+</RelativeLayout>

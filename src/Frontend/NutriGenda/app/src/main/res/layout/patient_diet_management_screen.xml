@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".screens.nutritionist.PatientDietManagementScreen">
+
+    <!-- Botão de Voltar -->
+    <ImageButton
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_margin="16dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="Voltar" />
+
+    <!-- Título da Tela -->
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Gerenciar Dieta"
+        android:textSize="24sp"
+        android:textColor="@color/green"
+        android:textStyle="bold"/>
+
+    <!-- Nome do Paciente -->
+    <TextView
+        android:id="@+id/tvPatientName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:text="Nome do Paciente"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+
+    <!-- Detalhes da Dieta -->
+    <TextView
+        android:id="@+id/tvDietDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvPatientName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Detalhes da Dieta"
+        android:textSize="18sp"
+        android:textColor="@color/black" />
+
+    <!-- Botão para Criar Nova Dieta -->
+    <Button
+        android:id="@+id/btnCreateDiet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvDietDetails"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/orange"
+        android:text="Criar Nova Dieta"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:visibility="gone"/>
+
+    <!-- Botão para Deletar Dieta -->
+    <Button
+        android:id="@+id/btnDeleteDiet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvDietDetails"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/black"
+        android:text="Deletar Dieta"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:visibility="gone"/>
+
+</RelativeLayout>

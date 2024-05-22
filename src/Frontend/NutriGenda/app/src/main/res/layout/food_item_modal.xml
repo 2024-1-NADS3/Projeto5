@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tvFoodItemTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Adicionar Item Alimentar"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:id="@+id/etFoodItemName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvFoodItemTitle"
+        android:layout_marginTop="16dp"
+        android:hint="Nome do Item Alimentar"/>
+
+    <EditText
+        android:id="@+id/etFoodItemDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etFoodItemName"
+        android:layout_marginTop="16dp"
+        android:hint="Descrição"/>
+
+    <Button
+        android:id="@+id/btnSaveFoodItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etFoodItemDescription"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:text="Salvar"
+        android:backgroundTint="@color/green"
+        android:textColor="@color/white"/>
+
+</RelativeLayout>

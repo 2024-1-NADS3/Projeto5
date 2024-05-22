@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".screens.diet.CreateDietScreen">
+
+    <!-- Título da Tela -->
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Criar Nova Dieta"
+        android:textSize="24sp"
+        android:textColor="@color/green"
+        android:textStyle="bold" />
+
+    <!-- Campo de Nome da Dieta -->
+    <EditText
+        android:id="@+id/etDietName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvTitle"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:hint="Nome da Dieta"
+        android:backgroundTint="@color/green"
+        android:textColor="@color/black"
+        android:textColorHint="@color/green" />
+
+    <!-- RecyclerView para Lista de Refeições -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvMeals"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etDietName"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        tools:listitem="@layout/item_meal" />
+
+    <!-- Botão para Adicionar Refeição -->
+    <Button
+        android:id="@+id/btnAddMeal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rvMeals"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/green"
+        android:text="Adicionar Refeição"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+    <!-- Botão para Salvar Dieta -->
+    <Button
+        android:id="@+id/btnSaveDiet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnAddMeal"
+        android:layout_marginTop="24dp"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/green"
+        android:text="Salvar Dieta"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+    <!-- Botão para Cancelar -->
+    <Button
+        android:id="@+id/btnCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnSaveDiet"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/orange"
+        android:text="Cancelar"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+</RelativeLayout>
