@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".screens.diet.DietScreen">
+
+    <ImageView
+        android:id="@+id/diet_logoImageView"
+        android:layout_width="168dp"
+        android:layout_height="168dp"
+        android:layout_marginTop="4dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/diet_planLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/diet_logoImageView"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:text="Seu plano de dieta:"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/diet_weekLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/diet_planLabel"
+        android:layout_marginTop="8dp"
+        android:layout_centerHorizontal="true"
+        android:text="Dieta atual"
+        android:textSize="16sp"
+        android:textColor="@color/black" />
+
+    <Button
+        android:id="@+id/diet_breakfastButton"
+        android:layout_width="170dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/diet_weekLabel"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/orange"
+        android:text="Café da Manhã"
+        android:fontFamily="@font/poppins_regular_font"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/diet_snackButton"
+        android:layout_width="170dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/diet_breakfastButton"
+        android:layout_marginTop="8dp"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/orange"
+        android:text="Lanche"
+        android:fontFamily="@font/poppins_regular_font"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/diet_lunchButton"
+        android:layout_width="170dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/diet_snackButton"
+        android:layout_marginTop="8dp"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/orange"
+        android:text="Almoço"
+        android:fontFamily="@font/poppins_regular_font"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/diet_afternoonSnackButton"
+        android:layout_width="170dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/diet_lunchButton"
+        android:layout_marginTop="8dp"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/orange"
+        android:text="Lanche da Tarde"
+        android:fontFamily="@font/poppins_regular_font"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/diet_dinnerButton"
+        android:layout_width="170dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/diet_afternoonSnackButton"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="130dp"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/orange"
+        android:text="Jantar"
+        android:fontFamily="@font/poppins_regular_font"
+        android:visibility="gone" />
+</RelativeLayout>

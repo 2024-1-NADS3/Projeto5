@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".screens.user.UserChooseScreen">
+
+    <ImageView
+        android:id="@+id/nutriRegister_logoImageView"
+        android:layout_width="211dp"
+        android:layout_height="106dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/nutriRegister_titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nutriRegister_logoImageView"
+        android:layout_marginTop="8dp"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/poppins_xbold_font"
+        android:text="Cadastro de Nutricionista"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textColor="@color/green" />
+
+    <TextView
+        android:id="@+id/nutriRegister_yourNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nutriRegister_titleTextView"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/poppins_regular_font"
+        android:text="Seu nome"
+        android:textColor="@color/black" />
+
+    <EditText
+        android:id="@+id/nutriRegister_nameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nutriRegister_yourNameTextView"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/rounded_edittext_border"
+        android:fontFamily="@font/poppins_regular_font"
+        android:inputType="text"
+        android:padding="10dp"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/nutriRegister_emailTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nutriRegister_nameEditText"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/poppins_regular_font"
+        android:text="E-mail"
+        android:textColor="@color/black" />
+
+    <EditText
+        android:id="@+id/nutriRegister_emailEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nutriRegister_emailTextView"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/rounded_edittext_border"
+        android:fontFamily="@font/poppins_regular_font"
+        android:inputType="textEmailAddress"
+        android:padding="10dp"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/nutriRegister_crnTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nutriRegister_emailEditText"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/poppins_regular_font"
+        android:text="CRN"
+        android:textColor="@color/black" />
+
+    <EditText
+        android:id="@+id/nutriRegister_crnEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nutriRegister_crnTextView"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/rounded_edittext_border"
+        android:fontFamily="@font/poppins_regular_font"
+        android:inputType="text"
+        android:padding="10dp"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/nutriRegister_passwordTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nutriRegister_crnEditText"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/poppins_regular_font"
+        android:text="Senha"
+        android:textColor="@color/black" />
+
+    <EditText
+        android:id="@+id/nutriRegister_passwordEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nutriRegister_passwordTextView"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/rounded_edittext_border"
+        android:fontFamily="@font/poppins_regular_font"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:textAlignment="center" />
+
+    <Button
+        android:id="@+id/nutriRegister_registerButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nutriRegister_passwordEditText"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/green"
+        android:fontFamily="@font/poppins_xbold_font"
+        android:text="Registrar"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/nutriRegister_alreadyAccountButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nutriRegister_registerButton"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/green"
+        android:fontFamily="@font/poppins_xbold_font"
+        android:text="Já tenho uma conta"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+</RelativeLayout>

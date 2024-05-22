@@ -1,0 +1,6 @@
+@NutriGendaApi_HostAddress = http://localhost:5136
+
+GET {{NutriGendaApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
