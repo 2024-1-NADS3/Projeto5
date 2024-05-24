@@ -36,6 +36,7 @@ dependencies {
     implementation libs.constraintlayout
     implementation libs.retrofit
     implementation libs.converter.gson
+    implementation fileTree(dir: 'C:\\Users\\natha\\AppData\\Local\\Android\\Sdk\\platforms\\android-34', include: ['*.aar', '*.jar'], exclude: [])
     annotationProcessor libs.lombok
     implementation libs.lombok
     testImplementation libs.junit

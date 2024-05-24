@@ -1,0 +1,14 @@
+unnamed package
+com.nutrienviroment.nutrigenda.models.chat
+com.nutrienviroment.nutrigenda.models.diet
+com.nutrienviroment.nutrigenda.models.nutritionist
+com.nutrienviroment.nutrigenda.models.user
+com.nutrienviroment.nutrigenda.screens.chat
+com.nutrienviroment.nutrigenda.screens.diet
+com.nutrienviroment.nutrigenda.screens.general
+com.nutrienviroment.nutrigenda.screens.nutritionist
+com.nutrienviroment.nutrigenda.screens.user
+com.nutrienviroment.nutrigenda.services.chat
+com.nutrienviroment.nutrigenda.services.diet
+com.nutrienviroment.nutrigenda.services.nutritionist
+com.nutrienviroment.nutrigenda.services.user
