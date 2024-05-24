@@ -8,6 +8,8 @@ using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 
+builder.Services.AddSingleton<OpenAIService>();
+
 builder.Services.AddControllers();
 builder.Services.AddScoped<DietService>();
 builder.Services.AddScoped<NutritionistService>();

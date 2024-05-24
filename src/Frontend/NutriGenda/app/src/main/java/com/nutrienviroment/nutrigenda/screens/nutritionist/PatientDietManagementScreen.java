@@ -18,8 +18,8 @@ import androidx.core.view.WindowInsetsCompat;
 import com.nutrienviroment.nutrigenda.R;
 import com.nutrienviroment.nutrigenda.models.diet.Diet;
 import com.nutrienviroment.nutrigenda.models.user.User;
+import com.nutrienviroment.nutrigenda.screens.chat.ChatScreen;
 import com.nutrienviroment.nutrigenda.screens.diet.CreateDietScreen;
-import com.nutrienviroment.nutrigenda.screens.diet.UpdateDietScreen;
 import com.nutrienviroment.nutrigenda.services.diet.DietServices;
 import com.nutrienviroment.nutrigenda.services.user.UserServices;
 
@@ -39,6 +39,7 @@ public class PatientDietManagementScreen extends AppCompatActivity {
     private TextView tvDietDetails;
     private Button btnCreateDiet;
     private Button btnDeleteDiet;
+    private Button btnAskSuggestions;
     private String userId;
     private Diet currentDiet;
 
@@ -65,6 +66,7 @@ public class PatientDietManagementScreen extends AppCompatActivity {
         tvDietDetails = findViewById(R.id.tvDietDetails);
         btnCreateDiet = findViewById(R.id.btnCreateDiet);
         btnDeleteDiet = findViewById(R.id.btnDeleteDiet);
+        btnAskSuggestions = findViewById(R.id.btnAskSuggestions);
         ImageButton btnBack = findViewById(R.id.btnBack);
 
         btnBack.setOnClickListener(v -> finish());
@@ -81,6 +83,11 @@ public class PatientDietManagementScreen extends AppCompatActivity {
         });
 
         btnDeleteDiet.setOnClickListener(v -> deleteDiet(currentDiet.getId()));
+
+        btnAskSuggestions.setOnClickListener(v -> {
+            Intent intent = new Intent(PatientDietManagementScreen.this, ChatScreen.class);
+            startActivity(intent);
+        });
     }
 
     private void fetchPatientDetails(String userId) {

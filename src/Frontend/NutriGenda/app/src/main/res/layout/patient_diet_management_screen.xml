@@ -16,7 +16,9 @@
         android:layout_alignParentStart="true"
         android:layout_margin="16dp"
         android:background="?attr/selectableItemBackgroundBorderless"
-        android:contentDescription="Voltar" />
+        android:contentDescription="Voltar"
+        android:src="@android:drawable/ic_menu_close_clear_cancel" />
+
 
     <!-- Título da Tela -->
     <TextView
@@ -74,7 +76,7 @@
         android:id="@+id/btnDeleteDiet"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/tvDietDetails"
+        android:layout_below="@id/btnCreateDiet"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="16dp"
         android:backgroundTint="@color/black"
@@ -82,5 +84,18 @@
         android:textColor="@color/white"
         android:textStyle="bold"
         android:visibility="gone"/>
+
+    <!-- Botão para Perguntar Sugestões para IA -->
+    <Button
+        android:id="@+id/btnAskSuggestions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnDeleteDiet"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="500dp"
+        android:backgroundTint="@color/black"
+        android:text="Perguntar sugestões para IA"
+        android:textColor="@color/white"
+        android:textStyle="bold"/>
 
 </RelativeLayout>

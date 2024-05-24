@@ -16,6 +16,9 @@
         android:theme="@style/Theme.NutriGenda"
         tools:targetApi="31">
         <activity
+            android:name=".screens.chat.ChatScreen"
+            android:exported="false" />
+        <activity
             android:name=".screens.diet.UpdateDietScreen"
             android:exported="false" />
         <activity
