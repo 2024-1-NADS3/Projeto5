@@ -33,7 +33,7 @@ public class UserLoginScreen extends AppCompatActivity {
         setContentView(R.layout.user_login_screen);
 
         Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl("https://nutrigendaapi.azure-api.net/")
+                .baseUrl("https://nutrigendaapi.azurewebsites.net/")
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
 

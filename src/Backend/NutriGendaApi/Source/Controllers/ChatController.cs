@@ -12,7 +12,7 @@ namespace NutriGendaApi.Source.Controllers
 
         public ChatController()
         {
-            _openai = new OpenAIAPI("sk-proj-kbzD8mf5tXsbqby40DB5T3BlbkFJy46wqzc1uhcsKfZ0nLfA");
+            _openai = new OpenAIAPI("sk-proj-ohbAo0hY54RpQuWT5VHVT3BlbkFJdlosbAWDHBaEU0m6XPi2");
         }
 
         [HttpPost]

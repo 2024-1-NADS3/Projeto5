@@ -65,7 +65,7 @@ public class NutritionistLoginScreen extends AppCompatActivity {
 
     private void setupRetrofit() {
         Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl("https://nutrigendaapi.azure-api.net/")
+                .baseUrl("https://nutrigendaapi.azurewebsites.net/")
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
 
