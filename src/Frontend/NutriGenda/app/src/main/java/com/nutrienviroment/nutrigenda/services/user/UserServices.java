@@ -18,9 +18,6 @@ public interface UserServices {
     @POST("api/user/login")
     Call<TokenResponse> loginUser(@Body User user);
 
-    @GET("api/user")
-    Call<List<User>> getAllUsers();
-
     @GET("api/user/{id}")
     Call<User> getUserById(@Path("id") String userId);
 

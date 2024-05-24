@@ -57,7 +57,7 @@ public class UpdateDietScreen extends AppCompatActivity {
         });
 
         Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl("https://nutrigendaapi.azurewebsites.net")
+                .baseUrl("https://nutrigendaapi.azure-api.net/")
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
 

@@ -17,7 +17,7 @@ public class ChatRepository {
 
     public ChatRepository() {
         Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl("http://10.0.2.2:5000/")
+                .baseUrl("https://nutrigendaapi.azure-api.net/")
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
 
