@@ -76,7 +76,7 @@ Para abrir este projeto, você necessita das seguintes ferramentas:
 - [Android Studio](https://developer.android.com/studio)
 - [Java JDK](https://www.oracle.com/java/technologies/javase-jdk11-downloads.html) 11 ou superior
 - [MySQL](https://www.mysql.com/downloads/)
-- [.NET 5.0](https://dotnet.microsoft.com/download/dotnet/5.0)
+- [.NET 8.0](https://dotnet.microsoft.com/download/dotnet/6.0)
 
 ### Passos para Configuração
 
