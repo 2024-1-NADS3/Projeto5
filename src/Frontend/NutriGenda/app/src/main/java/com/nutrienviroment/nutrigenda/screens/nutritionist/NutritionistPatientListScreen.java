@@ -53,7 +53,7 @@ public class NutritionistPatientListScreen extends AppCompatActivity {
         }
 
         Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl("http://10.0.2.2:5136")
+                .baseUrl("https://nutrigendaapi.azurewebsites.net")
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
 

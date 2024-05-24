@@ -97,11 +97,11 @@
               "type": "Microsoft.ApiManagement/service/apis",
               "name": "NutriGendaApi/NutriGendaApi",
               "properties": {
-                "displayName": "NutriGendaApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+                "displayName": "NutriGendaApi",
                 "apiRevision": "1",
                 "description": null,
                 "subscriptionRequired": true,
-                "serviceUrl": "https://nutrigendaapi.azurewebsites.net",
+                "serviceUrl": null,
                 "path": "",
                 "protocols": [
                   "https"

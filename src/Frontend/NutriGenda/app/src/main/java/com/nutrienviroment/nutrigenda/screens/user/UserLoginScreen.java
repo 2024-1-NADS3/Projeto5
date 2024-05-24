@@ -3,6 +3,7 @@ package com.nutrienviroment.nutrigenda.screens.user;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.util.Log;
 import android.util.Patterns;
 import android.widget.Button;
 import android.widget.EditText;
@@ -32,7 +33,7 @@ public class UserLoginScreen extends AppCompatActivity {
         setContentView(R.layout.user_login_screen);
 
         Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl("http://10.0.2.2:5136")
+                .baseUrl("https://nutrigendaapi.azurewebsites.net")
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
 
@@ -76,13 +77,16 @@ public class UserLoginScreen extends AppCompatActivity {
                     navigateToDietScreen(token, userId);
                     finish();
                 } else {
-                    Toast.makeText(UserLoginScreen.this, "Erro no login: " + response.message(), Toast.LENGTH_SHORT).show();
+                    String errorMessage = "Erro no login: " + response.message();
+                    Toast.makeText(UserLoginScreen.this, errorMessage, Toast.LENGTH_SHORT).show();
+                    Log.e("Erro", errorMessage);
                 }
             }
 
             @Override
             public void onFailure(Call<TokenResponse> call, Throwable t) {
                 Toast.makeText(UserLoginScreen.this, "Falha na comunicação: " + t.getMessage(), Toast.LENGTH_SHORT).show();
+                Log.e("Erro", "Falha na comunicação", t);
             }
         });
     }

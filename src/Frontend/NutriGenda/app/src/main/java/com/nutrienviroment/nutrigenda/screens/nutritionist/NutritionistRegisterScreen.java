@@ -38,7 +38,7 @@ public class NutritionistRegisterScreen extends AppCompatActivity {
         sharedPreferences = getSharedPreferences("NutriPrefs", MODE_PRIVATE);
 
         Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl("http://10.0.2.2:5136")
+                .baseUrl("https://nutrigendaapi.azurewebsites.net")
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
 
