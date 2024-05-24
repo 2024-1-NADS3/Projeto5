@@ -10,9 +10,10 @@ namespace NutriGendaApi.Source.Controllers
     {
         private readonly OpenAIAPI _openai;
 
-        public ChatController()
+        public ChatController(IConfiguration configuration)
         {
-            _openai = new OpenAIAPI("sk-proj-ohbAo0hY54RpQuWT5VHVT3BlbkFJdlosbAWDHBaEU0m6XPi2");
+            var apiKey = configuration["OpenAI:ApiKey"];
+            _openai = new OpenAIAPI(apiKey);
         }
 
         [HttpPost]
@@ -40,7 +41,7 @@ namespace NutriGendaApi.Source.Controllers
             try
             {
                 var response = await _openai.Chat.CreateChatCompletionAsync(chatRequest);
-                var reply = response.Choices[0].Message.Content.Trim();
+                var reply = response.Choices[0].Message.TextContent.Trim();
 
                 return Ok(new { reply });
             }
